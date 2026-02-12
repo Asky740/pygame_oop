@@ -9,3 +9,6 @@ class Platform:
         self.rect = self.image.get_rect(topleft=(x, y))
         self.x = x
         self.y = y
+    
+    def draw(self, screen):
+        screen.blit(self.image, self.rect)
