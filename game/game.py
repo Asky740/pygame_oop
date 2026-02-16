@@ -9,8 +9,10 @@ class Game:
     def handle_events(self):
         for event in pygame.event.get():
             print(event)
+
             if event.type == pygame.QUIT:
                 return False
+            
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_ESCAPE:
                     self.running = False
